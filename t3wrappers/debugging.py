@@ -21,8 +21,8 @@ def debug_func(print_it: bool=True, log_it: bool=False):
     This must be run with @debug_func().
 
     Parameters:
-    print_it:   bool        - If True(default) then prints start time and funciton name with calling parameters, and end time return value and type of function that is decorated
-    log_it:     bool        - If True(default) then logs start time and funciton name with calling parameters, and end time with  return value and type of function that is decorated
+    print_it:   bool        - If True(default) then prints start time and function name with calling parameters, and end time return value and type of function that is decorated
+    log_it:     bool        - If True then logs start time and function name with calling parameters, and end time with  return value and type of function that is decorated
     """
     def decorate_debug_func(func):
         @functools.wraps(func)
